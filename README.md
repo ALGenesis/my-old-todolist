@@ -32,27 +32,27 @@ TodoList with Javascript/
 
 ```mermaid
 graph TD
-    A[localStorage] --> B[app.js - main()]
+    A[localStorage] --> B[app.js main]
     B --> C[TodoList constructor]
-    C --> D[TodoList.appendTo()]
+    C --> D[TodoList appendTo]
     D --> E[Template clonage]
     E --> F[Affichage initial]
     
-    G[Formulaire soumission] --> H[TodoList.onSubmit()]
-    H --> I[Nouvelle tâche créée]
+    G[Formulaire soumission] --> H[TodoList onSubmit]
+    H --> I[Nouvelle tache creee]
     I --> J[TodoListItem]
     J --> K[Ajout au DOM]
-    K --> L[localStorage.update()]
+    K --> L[localStorage update]
     
-    M[Checkbox changement] --> N[TodoListItem.toggleTask()]
-    N --> O[CustomEvent 'toggleTask']
-    O --> P[TodoList écouteur]
-    P --> Q[localStorage.update()]
+    M[Checkbox changement] --> N[TodoListItem toggleTask]
+    N --> O[CustomEvent toggleTask]
+    O --> P[TodoList ecouteur]
+    P --> Q[localStorage update]
     
-    R[Bouton supprimer] --> S[TodoListItem.removeTask()]
-    S --> T[CustomEvent 'taskDeleted']
-    T --> U[TodoList écouteur]
-    U --> V[localStorage.update()]
+    R[Bouton supprimer] --> S[TodoListItem removeTask]
+    S --> T[CustomEvent taskDeleted]
+    T --> U[TodoList ecouteur]
+    U --> V[localStorage update]
 ```
 
 ### 🎨 Pattern Architectural
