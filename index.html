@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head><link rel="stylesheet" href="./css/main.css">
+<script src="./app.js" type="module" defer></script>
+<body>
+    <section id="todolist" class="container flexed"> 
+        <!-- les templates seront insérés ici -->
+    </section>
+
+    <template id="todolist-layout">
+        <form action="" class="flexed">
+            <input type="text"  name="task" id="" placeholder="Ajouter une tache">
+            <button class="btn" type="submit">Ajouter</button>
+        </form>
+
+        <main>
+            <div class="btn-group flexed">
+                <button class="btn active" data-filter="all">Toutes</button>
+                <button class="btn" data-filter="todo">A faire</button>
+                <button class="btn" data-filter="done">Faites</button>
+            </div>
+
+            <ul class="task-group">
+                
+            </ul>
+        </main>
+    </template>
+
+    <template id="todolist-item">
+        <li>
+            <input type="checkbox" name="checkbox" id="todo-1">
+            <label for="todo-1" class="task-details">Manger equilibrer</label>
+            <label for="todo-1" class="btn-delete">supprimer</label>
+        </li> 
+    </template>
+</body>
+</html>
